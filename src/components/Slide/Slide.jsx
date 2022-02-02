@@ -5,39 +5,24 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 const styles = {
     img: {
-        width: '100%',
+        width: '80%',
     }
 }
 
-export default function Slide({ banner1, banner2, banner3 }) {
+export default function Slide({ data }) {
     return (
-        <Carousel
-            nextIcon={''}
-            prevIcon={''}
-            nextLabel={''}
-            prevLabel={''}
-        >
-            <Carousel.Item>
-                <img
-                    style={ styles.img }
-                    src={ banner1 }
-                    alt="Banner 1"
-                />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    style={ styles.img }
-                    src={ banner2 }
-                    alt="Banner 1"
-                />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    style={ styles.img }
-                    src={ banner3 }
-                    alt="Banner 1"
-                />
-            </Carousel.Item>
+        <Carousel>
+            {
+                data.map(({ id, image, name }) => (
+                    <Carousel.Item key={ id }>
+                        <img
+                            style={ styles.img }
+                            src={ image }
+                            alt={ name }
+                        />
+                    </Carousel.Item>
+                ))
+            }
         </Carousel>
     )
 }

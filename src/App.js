@@ -21,7 +21,7 @@ function ScrollToTop() {
 function App() {
   return (
     <BrowserRouter>
-      <Switch >
+      <Switch>
         <Layout  className="App">
           <Route exact path="/" children={
             <Fragment>
