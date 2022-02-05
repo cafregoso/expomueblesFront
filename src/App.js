@@ -1,7 +1,8 @@
 import React, { useEffect, Fragment } from 'react';
-import { BrowserRouter, Route, Switch, useLocation } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import Layout from './pages/Layout/Layout';
 import Home from './pages/Home/Home';
+import NotFound from './pages/NotFound/NotFound';
 import Products from './pages/Products/Products';
 import ProductDetail from './pages/ProductDetail/ProductDetail';
 
@@ -21,28 +22,34 @@ function ScrollToTop() {
 function App() {
   return (
     <BrowserRouter>
-      <Switch>
-        <Layout  className="App">
-          <Route exact path="/" children={
+      <Routes>
+        <Route path='/' element={ <Layout /> } className="App">
+          <Route index element={
             <Fragment>
               <ScrollToTop /> 
               <Home />
             </Fragment>
           } />
-          <Route exact path="/productos" children={
+          <Route path="productos" element={
             <Fragment>
               <ScrollToTop /> 
               <Products />
             </Fragment>
           } />
-          <Route exact path="/producto" children={
+          <Route path="producto" element={
             <Fragment>
               <ScrollToTop />
               <ProductDetail />
             </Fragment>
           } />
-        </Layout>
-      </Switch>
+          <Route path="*" element={
+            <Fragment>
+              <ScrollToTop />
+              <NotFound />
+            </Fragment>
+          } />
+        </Route>
+      </Routes>
     </BrowserRouter>
   );
 }
