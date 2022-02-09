@@ -2,6 +2,7 @@ import React, { useEffect, Fragment } from 'react';
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import Layout from './pages/Layout/Layout';
 import Home from './pages/Home/Home';
+import Webinars from './pages/Webinars/Webinars';
 import NotFound from './pages/NotFound/NotFound';
 import Products from './pages/Products/Products';
 import ProductDetail from './pages/ProductDetail/ProductDetail';
@@ -30,13 +31,19 @@ function App() {
               <Home />
             </Fragment>
           } />
-          <Route path="productos" element={
+          <Route path="webinars" element={
+            <Fragment>
+              <ScrollToTop /> 
+              <Webinars />
+            </Fragment>
+          } />
+          <Route path="productos/:id" element={
             <Fragment>
               <ScrollToTop /> 
               <Products />
             </Fragment>
           } />
-          <Route path="producto" element={
+          <Route path="producto/:name" element={
             <Fragment>
               <ScrollToTop />
               <ProductDetail />

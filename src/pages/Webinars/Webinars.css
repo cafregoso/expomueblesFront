@@ -1,0 +1,14 @@
+.container-webinar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px; 
+}
+
+.title-webinar {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #571E4D;
+    margin-left: 8%;
+    margin-top: 40px; 
+}

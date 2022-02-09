@@ -1,0 +1,9 @@
+.banner__container {
+    display: grid;
+    place-items: center;
+    margin-bottom: 50px;
+}
+
+.banner__image {
+    width: 100%;
+}
