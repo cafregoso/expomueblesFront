@@ -12,3 +12,7 @@ ReactDOM.render(
 );
 
 reportWebVitals();
+
+if (module.hot) {
+  module.hot.accept()
+}

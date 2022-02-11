@@ -1,0 +1,28 @@
+.container-home {
+    box-sizing: border-box !important;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-image {
+    height: 500px;
+    display: flex;
+    margin: 15px 10px;
+
+}
+
+.container-left {
+    background: yellow;
+}
+
+.container-left img{
+    height: 500px;
+}
+
+.container-right {
+    background: blue;
+}
+
+.container-right img {
+    height: 500px;
+}
