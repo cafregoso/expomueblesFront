@@ -2,10 +2,12 @@ import React, { useEffect, Fragment } from 'react';
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import Layout from './pages/Layout/Layout';
 import Home from './pages/Home/Home';
+import Us from './pages/Us/Us';
 import Webinars from './pages/Webinars/Webinars';
 import NotFound from './pages/NotFound/NotFound';
 import Products from './pages/Products/Products';
 import ProductDetail from './pages/ProductDetail/ProductDetail';
+import Creative from './pages/Creative/Creative';
 
 import './App.css';
 
@@ -43,10 +45,22 @@ function App() {
               <Products />
             </Fragment>
           } />
-          <Route path="producto/:name" element={
+          <Route path="producto/:id" element={
             <Fragment>
               <ScrollToTop />
               <ProductDetail />
+            </Fragment>
+          } />
+          <Route path="nosotros" element={
+            <Fragment>
+              <ScrollToTop />
+              <Us />
+            </Fragment>
+          } />
+          <Route path="creativo" element={
+            <Fragment>
+              <ScrollToTop />
+              <Creative />
             </Fragment>
           } />
           <Route path="*" element={

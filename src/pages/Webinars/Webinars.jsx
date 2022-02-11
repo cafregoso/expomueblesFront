@@ -1,6 +1,7 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import  Axios  from 'axios';
 import BusinessCard from '../../components/BusinessCard/BusinessCard';
+import Footer from '../../components/Footer/Footer';
 
 import './Webinars.css'
 
@@ -41,6 +42,7 @@ export default function Webinars() {
                 ))
             }
           </div>
+          <Footer />
         </Fragment>
     )
 }

@@ -1,5 +1,5 @@
-import axios from "axios";
 import React, { Fragment, useEffect, useState } from "react";
+import axios from "axios";
 import { Link, useParams } from "react-router-dom";
 import Card from "../../components/Card/Card";
 import Banner from "../../components/Banner/Banner";
@@ -34,7 +34,7 @@ export default function Products() {
       <section
         style={{
           display: "grid",
-          gridTemplateColumns: "50% 40%",
+          gridTemplateColumns: "auto auto",
         }}
         className='products-section'
       >

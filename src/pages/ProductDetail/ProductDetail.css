@@ -1,0 +1,38 @@
+.product-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    font-family: 'Noto sans', sans-serif;
+}
+
+.product-container_img {
+    padding: 15px;
+    display: grid;
+    place-items: center;
+}
+
+.product-container_img img {
+    width: 80%;
+}
+
+.product-title {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin: 40px auto;
+}
+
+.product-title h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #3c6756;
+}
+
+.product-container_acc {
+    padding: 15px;
+}
+
+.product-acc {
+    height: 60%;
+    place-items: center;
+    padding-top: 100px;
+}

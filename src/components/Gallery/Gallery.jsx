@@ -16,7 +16,7 @@ const styles = {
     }
 }
 
-export default function Gallery({ banner1, banner2, banner3 }) {
+export default function Slide({ banner1, banner2, banner3, banner4 }) {
     return (
         <div style={ styles.container }>
             <Carousel >
@@ -31,14 +31,21 @@ export default function Gallery({ banner1, banner2, banner3 }) {
                     <img
                         style={ styles.img }
                         src={ banner2 }
-                        alt="Banner 2"
+                        alt="Banner 1"
                     />
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         style={ styles.img }
                         src={ banner3 }
-                        alt="Banner 3"
+                        alt="Banner 1"
+                    />
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        style={ styles.img }
+                        src={ banner4 }
+                        alt="Banner 4"
                     />
                 </Carousel.Item>
             </Carousel>

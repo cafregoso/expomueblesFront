@@ -3,25 +3,29 @@ footer {
     box-sizing: border-box;
     margin-top: 20px;
     padding: 0;;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     font-family: 'Noto Sans', sans-serif;
     height: 150px;
 }
 
 .coryright {
     place-self: center;
-    width: 350px;
+    width: auto;
+    margin: auto;
 }
 
 .coryright p {
     margin: 0;
     color: #FFF;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .contact-info {
     place-self: center;
-    width: 350px;
+    width: auto;
+    margin: auto;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .contact-info p {
@@ -38,9 +42,61 @@ footer {
 .contact-info a {
     text-decoration: none;
     color: #FFF;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .contact-info a:hover {
     cursor: pointer;
     text-decoration: underline;
+}
+
+.social {
+    display: flex;
+    place-items: center;
+    width: auto;
+}
+
+@media (max-width: 900px) {
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 700px) {
+    footer {
+        height: 200px;
+    }
+
+    .coryright {
+        font-size: .8rem;
+        width: 100%;
+        display: grid;
+        place-items: center;
+    }
+
+    .contact-info {
+        width: 100%;
+        display: grid;
+        place-items: center;
+    }
+
+    .contact-info h3 {
+        font-size: 1rem !important;
+    }
+    
+    .contact-info p {
+        font-size: .8rem;
+    }
+    
+    .social {
+        width: 100%;
+        display: grid;
+        place-items: center;
+    }
+    
+    .footer-icon {
+        font-size: 2rem !important;
+    }
 }

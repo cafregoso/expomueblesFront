@@ -36,3 +36,30 @@
     font-size: 1rem;
     font-weight: bold;
 }
+
+@media (max-width:500px) {
+    .webinar-main {
+        max-width: 300px;
+    }
+
+    .webinar-section {
+        width: 280px;
+    }
+
+    .webinar-image {
+        max-width: 180px;
+    }
+
+    .webinar-name {
+        font-size: 1.5rem;
+    }
+
+    .webinar-theme {
+        font-size: 1rem;
+    }
+
+    .webinar-date {
+        font-size: .9rem;
+    }
+
+}
