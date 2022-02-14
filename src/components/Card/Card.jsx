@@ -7,6 +7,7 @@ const styles = {
         display: 'flex',
         justifyContent: 'right',
         width: '100%',
+        paddingRight: '10px',
     },
     image: {
         width: '100%',

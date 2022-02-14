@@ -1,11 +1,6 @@
 import React, { Fragment, useEffect, useState } from "react";
 import Axios from "axios";
 import { useParams } from "react-router-dom";
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import Banner from "../../components/Banner/Banner";
 import Footer from "../../components/Footer/Footer";
@@ -22,7 +17,7 @@ export default function ProductDetail() {
     const fetchCategories = async () => {
       try {
         const response = await Axios({
-          url: `http://127.0.0.1:8000/api/`,
+          url: `http://177.231.255.18/api/`,
         });
 
         setCategory(response.data);
@@ -36,7 +31,7 @@ export default function ProductDetail() {
     const fetchData = async () => {
       try {
         const response = await Axios({
-          url: `http://127.0.0.1:8000/api/producto/${id}`,
+          url: `http://177.231.255.18/api/producto/${id}`,
         });
 
         setProduct(response.data);
@@ -75,35 +70,19 @@ export default function ProductDetail() {
           <div className="product-title">
             <h1>{ product.name }</h1>
           </div>
-          <div className="product-acc">
-          <Accordion>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <Typography>Características</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
+          <div className="product-info">
+            <div>
+              <h3>Características</h3>
+              <p>
                 { product.description }
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel2a-content"
-              id="panel2a-header"
-            >
-              <Typography>Materiales</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
+              </p>
+            </div>
+            <div className="product-colors">
+              <h3>Colores</h3>
+              <p>
                 { product.materials }
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
+              </p>
+            </div>
           </div>
         </div>
       </section>

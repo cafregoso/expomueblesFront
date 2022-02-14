@@ -19,7 +19,7 @@ export default function Home() {
     const fetchData = async () => {
       try {
         const response = await Axios({
-          url: "http://127.0.0.1:8000/api/",
+          url: "http://177.231.255.18/api/",
         });
 
         setSpace(response.data);
