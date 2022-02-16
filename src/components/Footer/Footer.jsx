@@ -9,7 +9,7 @@ export default function Footer() {
     <footer>
       <div className="coryright">
         <p>
-          Copyright ©2021 All rights reserved | <br /> Grupo Requiez
+          Copyright ©2022 All rights reserved | <br /> Grupo Requiez
         </p>
       </div>
       <div className="contact-info">
