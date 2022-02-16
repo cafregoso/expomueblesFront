@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 const styles = {
     img: {
         width: '100%',
-        maxWidth: '1500px',
+        maxWidth: '1700px',
     },
     container: {
         width: '100%',

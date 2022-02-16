@@ -44,11 +44,21 @@ export default function Us() {
               <hr className='us-marcas_hr' />
             </div>
             <div className="us-marcas_logos">
+              <a href='https://requiez.com' target='_blank' rel='noreferrer'>
                 <img src={ requiez } alt='Requiez Logo' />
+              </a>
+              <a href='https://infinitidesignmexico.com/es' target='_blank' rel='noreferrer'>
                 <img src={ infiniti } alt='Infiniti Logo' />
+              </a>
+              <a href='https://labenze.com' target='_blank' rel='noreferrer'>
                 <img src={ labenze } alt='Labenze Logo' />
+              </a>
+              <a href='https://quadrifoglio.com.mx' target='_blank' rel='noreferrer'>
                 <img src={ quadrifoglio } alt='Quadrifoglio Logo' />
+              </a>
+              <a href='https://okamuramexico.com' target='_blank' rel='noreferrer'>
                 <img src={ okamura } alt='Okamura Logo' />
+              </a>
             </div>
           </section>
           <Footer />

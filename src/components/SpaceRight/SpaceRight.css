@@ -1,7 +1,8 @@
 .space-containerR {
     display: grid;
     grid-template-columns: 40% 60%;
-    margin: 10px 20px;
+    margin: 10px auto;
+    max-width: 1500px;
 }
 
 .space-imageR img{
