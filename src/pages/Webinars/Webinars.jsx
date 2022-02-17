@@ -13,7 +13,7 @@ export default function Webinars() {
         const fetchData = async () => {
           try {
             const response = await Axios({
-              url: 'http://177.231.255.18/api/webinars/'
+              url: 'https://cafregoso.com/api/webinars/'
             })
     
             setWebinar(response.data)

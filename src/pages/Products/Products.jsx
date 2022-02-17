@@ -12,11 +12,11 @@ export default function Products() {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    axios.get(`http://177.231.255.18/api/`).then((response) => {
+    axios.get(`https://cafregoso.com/api/`).then((response) => {
       setCategories(response.data);
     });
 
-    axios.get(`http://177.231.255.18/api/${id}`).then((response) => {
+    axios.get(`https://cafregoso.com/api/${id}`).then((response) => {
       setSubcategories(response.data);
     });
   }, [id]);
