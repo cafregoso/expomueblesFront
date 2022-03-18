@@ -17,7 +17,7 @@ export default function ProductDetail() {
     const fetchCategories = async () => {
       try {
         const response = await Axios({
-          url: `http://177.231.255.18/api/`,
+          url: `https://cafregoso.com/api/`,
         });
 
         setCategory(response.data);
@@ -31,7 +31,7 @@ export default function ProductDetail() {
     const fetchData = async () => {
       try {
         const response = await Axios({
-          url: `http://177.231.255.18/api/producto/${id}`,
+          url: `https://cafregoso.com/api/producto/${id}`,
         });
 
         setProduct(response.data);
